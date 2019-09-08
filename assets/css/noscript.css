@@ -7,7 +7,7 @@
 /* BG */
 
 	body.is-preload #bg:before {
-		background-color: url("images/DC Skyline.jpg");
+		background-color: transparent;
 	}
 
 /* Header */
