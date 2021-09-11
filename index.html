@@ -18,6 +18,55 @@
 		<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg" />
                 <meta property="og:description" content="Projects, Background, Skills, Business." />
 		-->
+		
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>		
+		
+		
+		
+		
+		
+		
+		
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -49,7 +98,7 @@
 								<li><a href="#background"> Background </a></li>
 								<li><a href="#skills"> Skill Sets </a></li>
 								<li><a href="#business"> Business </a></li>
-								<!--<li><a href="#organizations">Organizations</a></li>-->
+								<li><a href="#organizations">Organizations</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -790,65 +839,60 @@
 							<article id="organizations">
 								<h2 class="major">Organizations</h2>
 								
-								<p>
-								
-								<span class="image main"><img src="images/Hackital.jpg" alt="" /></span>
-								<h4 class="major">GW Hacks</h4>
-								I was the Head of User Experience in GW Hacks holding an event called Hackital: A Hackathon in the Capital. The event has a theme called Smart Cities. I was responsible for user experience which includes sponsorship, ordering items, speakers and catering services to ensure the participants enjoy the event and will have a great experience. The Hackathon was a 3-day event and this requires coordination, communication and heavy planning.<br />
-								<br />	
-								<ul>
-									<li>Sponsorship efforts (CISCO, General Assembly, Microsoft) generating over $12,000 in funding.</li>
-									<li>Increased the number of executive members in the organization by recruiting 2 qualified leaders.</li>
-									<li>Responsibilities included ordering supplies, speakers and catering services which requires coordination, constant communication and heavy planning for the 36-hour long hackathon event with 70+ participants.</li>
-									<li>Spearheaded reform of the document system by creating a summary spreadsheet to organize information from leaders, speeding up communication and reducing misunderstandings.</li>
-									
-								</ul>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 								<br />
-								
-								
-								<span class="image main"><img src="images/PCS all.jpg" alt="" /></span>
-								<h4 class="major">Philippine Cultural Society</h4>
-								I was a District Six Representative in The Philippine Cultural Society from September 2016 to September 2017. My responsibilitites include relaying information back and forth from District Six (D6) to Philippine Cultural Society (PCS).<br />
-								<br />	
-								<ul>
-									<li>Organized a fundraiser for the organization. Delegated and tracked all sold items in an excel file including receipts, order requests, profit, etc.</li>
-									<li>Organized transportation and accounting for people to go to the annual District Six Semi-Formal. Coordinated the meeting and departure times, cost of renting the vehicles and gas, while accounting for the number of people per vehicle.</li>
-								</ul>
-								
-								<br />
-				
-								<span class="image main"><img src="images/Fuego.jpg" alt="" /></span>
-								<h4 class="major">Fuego Dance Team</h4>
-								I was a member of Fuego, a latin dance team that performs Bachata, Cha-cha, and Salsa. Its purpose is to increase Latino cultural awareness through music and dance. 
-								I had the opportunity to perform a dance called Bachata for the 24th Annual La Fiestasa. Many people audition but only a few get chosen.
-								It requires a certain personality to commit to the intense pyhsically demanding practices of at least four times per week. 
-								
-								<br />
-								<br />	
-								<br />
-								
-								
-								
-								<span class="image main"><img src="images/Red_Cross.jpg" alt="" /></span>
-								<h4 class="major">Volunteer Events</h4>
-								I participate in volunteer events from time to time.
-								I volunteered at Meals on Wheels, Feed my Starving Children, Red Cross blood drives and donated blood. 
-								I want to make a difference in the community even if it’s small ones. 
-								I used to frequently do random good deeds but sometimes they backfire, 
-								so I think volunteer events is a better way to serve the community.<br />	
-								<br />	
-								<ul>
-									<li>Blood Drives in California (Health)</li>
-									<li>Shamrock Shuffle Chicago (Runners)</li>
-									<li>Feed my Starving Children (Children)</li>
-									<li>Meals on Wheels (Hungry Communities)</li>
-									<li>Pet-A-Palooza (Animal Welfare)</li>
-									<li>Red Cross Blood Donations (Health)</li>
-									<li>GWU Composting (Environment)</li>
-								</ul>
-								<br />
-								
-							
 								</p>
 								<ul class="actions">
 										<li><a href="#skills" class="button small">Previous Page</a></li>
