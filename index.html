@@ -113,6 +113,18 @@
 							<article id="business">
 								<section>
 									<h2 class="major">Market Chat</h2>
+									<pre>
+										<code>i = 0;
+
+											while (!deck.isInOrder()) {
+											    print 'Iteration ' + i;
+											    deck.shuffle();
+											    i++;
+											}
+
+											print 'It took ' + i + ' iterations to sort the deck.';
+										</code>
+									</pre>
 									<div>
 										<div class="field">
 											<label for="demo-message">Message</label>
@@ -1031,13 +1043,14 @@
 									<h4>Preformatted</h4>
 									<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+										while (!deck.isInOrder()) {
+										    print 'Iteration ' + i;
+										    deck.shuffle();
+										    i++;
+										}
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+										print 'It took ' + i + ' iterations to sort the deck.';</code>
+									</pre>
 								</section>
 
 								<section>
