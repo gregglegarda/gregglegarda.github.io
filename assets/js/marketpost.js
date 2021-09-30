@@ -3,12 +3,15 @@ console.log("gregg");
 
 
 function submit_post() {
-    var n_jquery=$('#demo-message').val();
-    var n_js =document.getElementById('demo-message').value;
-    console.log("n_jquery",n_jquery);
-    console.log("n_js",n_js);
+    var title = $('#demo-message-title').val();
+    var description = $('#demo-message').val();
+    console.log("went here");
+    $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ title + "</h4><p>" + description+ "</p><br /><br /></div>")
+
+
 }
 
 function clear_post() {
+    document.getElementById("demo-message-title").value = "";
     document.getElementById("demo-message").value = "";
 }
