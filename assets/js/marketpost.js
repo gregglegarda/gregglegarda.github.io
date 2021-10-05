@@ -1,6 +1,7 @@
-console.log("gregg");
+console.log("marketpost.js");
 // define the callAPI function that takes a first name and last name as parameters
 var callAPI = (firstName,lastName)=>{
+     console.log("went here to callAPI");
     // instantiate a headers object
     var myHeaders = new Headers();
     // add content type header to object
@@ -26,9 +27,9 @@ var callAPI = (firstName,lastName)=>{
 function submit_post() {
     var title = $('#demo-message-title').val();
     var description = $('#demo-message').val();
-    console.log("went here");
+    console.log("went here to submit_post");
     $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ title + "</h4><p>" + description+ "</p><br /><br /></div>")
-    saveStaticDataToFile();
+
 }
 
 function clear_post() {
