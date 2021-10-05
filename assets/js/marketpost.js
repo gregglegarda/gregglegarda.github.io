@@ -24,12 +24,15 @@ var callAPI = (firstName,lastName)=>{
     fetch("https://osew5a4fd2.execute-api.us-east-1.amazonaws.com/dev6981", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
+    .then(result => console.log(JSON.parse(result).body))
     .catch(error => console.log('error', error));
+
+
 }
 
 
 
-function submit_post(firstName,lastName) {
+function submit_post(title,description) {
 
     var title = $('#demo-message-title').val();
     var description = $('#demo-message').val();
