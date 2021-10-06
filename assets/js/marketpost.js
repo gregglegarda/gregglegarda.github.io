@@ -33,6 +33,7 @@ var callAPI = (firstName,lastName)=>{
 
 
 function submit_post(data) {
+    console.log("submit_post");
     for (var i = 0; i < data.length; i++) {
         //console.log(data[i]);
         //Do something
