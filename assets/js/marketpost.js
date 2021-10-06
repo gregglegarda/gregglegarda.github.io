@@ -2,7 +2,7 @@ console.log("marketpost.js 2");
 
 function display_post(data) {
     console.log("submit_post");
-    //$( "#market_post_history" ).empty();
+    $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
@@ -41,7 +41,7 @@ function clear_post() {
     document.getElementById("demo-message").value = "";
 }
 
-callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
+//callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
 
 
 
