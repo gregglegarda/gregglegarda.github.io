@@ -1,6 +1,4 @@
-console.log("marketpost.js");
-callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
-
+console.log("marketpost.js script");
 
 function display_post(data) {
     console.log("submit_post");
@@ -42,4 +40,8 @@ function clear_post() {
     document.getElementById("demo-message-title").value = "";
     document.getElementById("demo-message").value = "";
 }
+
+callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
+
+
 
