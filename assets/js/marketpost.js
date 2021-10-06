@@ -1,4 +1,4 @@
-console.log("marketpost.js5");
+console.log("marketpost.js1");
 
 
 function submit_post(data) {
