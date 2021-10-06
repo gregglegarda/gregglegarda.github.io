@@ -6,7 +6,7 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['LatestGreetingTime'] + "</h4><p>" + object['ID']+ "</p><br /><br /></div>")
+        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['Title'] + "</h4><p>" + object['ID']+ object['Message']+"</p><br /><br /></div>")
 
     }
     clear_post()
@@ -21,7 +21,7 @@ var callAPI = (title, description)=>{
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"firstName":title,"lastName":description});
+    var raw = JSON.stringify({"title":title,"message":description});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
