@@ -1,15 +1,18 @@
-console.log("marketpost.js2");
+console.log("marketpost.js");
 
 
 function submit_post(data) {
     console.log("submit_post");
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
+        var object = data[i];
         //Do something
         //for (const [key, value] of Object.entries(data)) {
         //  console.log(`${key}: ${value}`);
         //  $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
         //}
+        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['LatestGreetingTime'] + "</h4><p>" + object['ID']+ "</p><br /><br /></div>")
+
     }
 
 
