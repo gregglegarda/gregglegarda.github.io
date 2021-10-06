@@ -1,15 +1,15 @@
-console.log("marketpost.js4");
+console.log("marketpost.js5");
 
 
 function submit_post(data) {
     console.log("submit_post");
     for (var i = 0; i < data.length; i++) {
-        //console.log(data[i]);
+        console.log(data[i]);
         //Do something
-        for (const [key, value] of Object.entries(data)) {
-          console.log(`${key}: ${value}`);
-          $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
-        }
+        //for (const [key, value] of Object.entries(data)) {
+        //  console.log(`${key}: ${value}`);
+        //  $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
+        //}
     }
 
 
