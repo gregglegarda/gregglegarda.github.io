@@ -2,6 +2,7 @@ console.log("marketpost.js script");
 
 function display_post(data) {
     console.log("submit_post");
+    $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
