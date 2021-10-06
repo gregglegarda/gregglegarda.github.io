@@ -1,4 +1,4 @@
-console.log("marketpost.js");
+console.log("marketpost.js 1");
 
 function display_post(data) {
     console.log("submit_post");
@@ -6,8 +6,7 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['Title'] + "</h4><p>" + object['ID']+ object['Message']+"</p><br /><br /></div>")
-
+        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['Title'] + "</h4><p>" + object['Message']+ "<br />" + object['ID']+"</p><br /><br /></div>")
     }
     clear_post()
 }
