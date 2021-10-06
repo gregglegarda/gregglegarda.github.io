@@ -1,6 +1,24 @@
-console.log("marketpost.js1");
+console.log("marketpost.js2");
 
 
+function submit_post(data) {
+    console.log("submit_post");
+    for (var i = 0; i < data.length; i++) {
+        //console.log(data[i]);
+        //Do something
+        for (const [key, value] of Object.entries(data)) {
+          console.log(`${key}: ${value}`);
+          $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
+        }
+    }
+
+
+    //var title = $('#demo-message-title').val();
+    //var description = $('#demo-message').val();
+    //console.log("went here to submit_post");
+    //$( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ title + "</h4><p>" + description+ "</p><br /><br /></div>")
+
+}
 
 
 
@@ -32,24 +50,6 @@ var callAPI = (firstName,lastName)=>{
 
 
 
-function submit_post(data) {
-    console.log("submit_post");
-    for (var i = 0; i < data.length; i++) {
-        //console.log(data[i]);
-        //Do something
-        for (const [key, value] of Object.entries(data)) {
-          console.log(`${key}: ${value}`);
-          $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
-        }
-    }
-
-
-    //var title = $('#demo-message-title').val();
-    //var description = $('#demo-message').val();
-    //console.log("went here to submit_post");
-    //$( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ title + "</h4><p>" + description+ "</p><br /><br /></div>")
-
-}
 
 function clear_post() {
     document.getElementById("demo-message-title").value = "";
