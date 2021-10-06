@@ -1,4 +1,4 @@
-console.log("marketpost.js script");
+console.log("marketpost.js");
 
 function display_post(data) {
     console.log("submit_post");
