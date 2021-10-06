@@ -1,7 +1,7 @@
-console.log("marketpost.js");
+console.log("marketpost.js script");
 
 
-function submit_post(data) {
+function display_post(data) {
     console.log("submit_post");
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
@@ -26,14 +26,14 @@ function submit_post(data) {
 
 
 // define the callAPI function that takes a first name and last name as parameters
-var callAPI = (firstName,lastName)=>{
+var callAPI = (title, description)=>{
      console.log("went here to callAPI");
     // instantiate a headers object
     var myHeaders = new Headers();
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"firstName":firstName,"lastName":lastName});
+    var raw = JSON.stringify({"firstName":title,"lastName":description});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
@@ -44,7 +44,7 @@ var callAPI = (firstName,lastName)=>{
     // make API call with parameters and use promises to get response
     fetch("https://osew5a4fd2.execute-api.us-east-1.amazonaws.com/dev6981", requestOptions)
     .then(response => response.text())
-    .then(result => submit_post(JSON.parse(result).body))
+    .then(result => display_post(JSON.parse(result).body))
     .catch(error => console.log('error', error));
 
 
