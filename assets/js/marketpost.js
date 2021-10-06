@@ -1,4 +1,5 @@
-console.log("marketpost.js script");
+console.log("marketpost.js");
+callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
 
 
 function display_post(data) {
@@ -6,23 +7,11 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        //Do something
-        //for (const [key, value] of Object.entries(data)) {
-        //  console.log(`${key}: ${value}`);
-        //  $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ key + "</h4><p>" + value+ "</p><br /><br /></div>")
-        //}
         $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['LatestGreetingTime'] + "</h4><p>" + object['ID']+ "</p><br /><br /></div>")
 
     }
-
-
-    //var title = $('#demo-message-title').val();
-    //var description = $('#demo-message').val();
-    //console.log("went here to submit_post");
-    //$( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ title + "</h4><p>" + description+ "</p><br /><br /></div>")
-
+    clear_post()
 }
-
 
 
 // define the callAPI function that takes a first name and last name as parameters
@@ -46,11 +35,7 @@ var callAPI = (title, description)=>{
     .then(response => response.text())
     .then(result => display_post(JSON.parse(result).body))
     .catch(error => console.log('error', error));
-
-
 }
-
-
 
 
 function clear_post() {
