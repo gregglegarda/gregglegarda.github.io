@@ -1,4 +1,4 @@
-console.log("marketpost.js2");
+console.log("marketpost.js3");
 
 
 function submit_post(data) {
@@ -42,7 +42,7 @@ var callAPI = (firstName,lastName)=>{
     fetch("https://osew5a4fd2.execute-api.us-east-1.amazonaws.com/dev6981", requestOptions)
     .then(response => response.text())
     .then(result => console.log(JSON.stringify(JSON.parse(result).body)))
-    .then(result => submit_post(JSON.parse(result).body))
+    .then(result => submit_post(JSON.stringify(JSON.parse(result).body)))
     .catch(error => console.log('error', error));
 
 
