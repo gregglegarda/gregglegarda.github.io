@@ -1,7 +1,7 @@
 console.log("marketpost.js 2");
 
 function display_post(data) {
-    console.log("submit_post");
+    console.log("submit_post", data);
     $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
