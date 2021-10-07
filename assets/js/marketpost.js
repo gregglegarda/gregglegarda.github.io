@@ -6,7 +6,7 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['Title'] + "</h4><p>" + object['Message']+ "<br />" + object['ID']+"</p><br /><br /></div>")
+        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "<br />" + object['ID']+"</p><br /><br /></div>")
     }
     clear_post()
 }
@@ -23,7 +23,7 @@ var callAPI = (title, description)=>{
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"title":title,"message":description, "date":now});
+    var raw = JSON.stringify({"now":now, "title":title,"message":description, "date":now});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
@@ -32,7 +32,7 @@ var callAPI = (title, description)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("https://osew5a4fd2.execute-api.us-east-1.amazonaws.com/dev6981", requestOptions)
+    fetch("https://89xodcg5pj.execute-api.us-east-1.amazonaws.com/gregglegardadev", requestOptions)
     .then(response => response.text())
     .then(result => display_post(JSON.parse(result).body))
     .catch(error => console.log('error', error));
