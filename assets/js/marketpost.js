@@ -13,17 +13,16 @@ function display_post(data) {
 
 
 // define the callAPI function that takes a first name and last name as parameters
-var callAPI = (title, description)=>{
-    console.log("went here to callAPI");
-    let date = new Date();
-    let now = date.toISOString();
-    console.log(now);
+var callAPI = (title, message)=>{
+    let id = "gregglegardaID"
+    let new_date = new Date();
+    let date = new_date.toISOString();
     // instantiate a headers object
     var myHeaders = new Headers();
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"now":now, "title":title,"message":description, "date":now});
+    var raw = JSON.stringify({"id":id, "title":title,"message":message, "date":date});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
