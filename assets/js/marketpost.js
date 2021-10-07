@@ -1,20 +1,7 @@
-console.log("marketpost.js1");
+console.log("marketpost.js");
 
-
-function load_db(){
-    console.log("load db");
-    var requestOptions = {
-        method: 'GET',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
-    };
-
-    fetch("https://89xodcg5pj.execute-api.us-east-1.amazonaws.com/gregglegardadev", requestOptions)
-    .then(response => response.text())
-    .then(result => display_post(JSON.parse(result).body))
-    .catch(error => console.log('error', error));
-}
+//submit post to initialize API call and to pull from database
+submit_post()
 
 function submit_post() {
     console.log("submit post");
@@ -29,8 +16,7 @@ function display_post(data) {
         var object = data[i];
         $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><br /><br /></div>")
     }
-    alert("Posted!")
-    clear_post()
+    clear_post();
 }
 
 
