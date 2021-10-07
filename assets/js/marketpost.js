@@ -1,13 +1,28 @@
 console.log("marketpost.js");
 
+
+function load_db(){
+    console.log("load db");
+    fetch("https://89xodcg5pj.execute-api.us-east-1.amazonaws.com/gregglegardadev", requestOptions)
+    .then(response => response.text())
+    .then(result => display_post(JSON.parse(result).body))
+    .catch(error => console.log('error', error));
+}
+
+function submit_post() {
+    console.log("submit post");
+    callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
+}
+
 function display_post(data) {
-    console.log("submit_post", data);
+    console.log("display_post", data);
     $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
         $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><br /><br /></div>")
     }
+    alert("Posted!")
     clear_post()
 }
 
@@ -43,5 +58,5 @@ function clear_post() {
     document.getElementById("demo-message").value = "";
 }
 
-callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
 
+load_db();
