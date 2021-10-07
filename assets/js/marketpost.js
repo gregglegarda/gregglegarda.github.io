@@ -3,6 +3,13 @@ console.log("marketpost.js");
 
 function load_db(){
     console.log("load db");
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
     fetch("https://89xodcg5pj.execute-api.us-east-1.amazonaws.com/gregglegardadev", requestOptions)
     .then(response => response.text())
     .then(result => display_post(JSON.parse(result).body))
@@ -30,6 +37,9 @@ function display_post(data) {
 // define the callAPI function that takes a first name and last name as parameters
 var callAPI = (title, message)=>{
     let id = "gregglegardaID"
+    if (title == "" || message == ""){
+        id = "none";
+    }
     let new_date = new Date();
     let date = new_date.toISOString();
     // instantiate a headers object
