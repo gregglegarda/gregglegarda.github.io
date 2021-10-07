@@ -2,6 +2,9 @@ console.log("marketpost.js 2");
 
 function display_post(data) {
     console.log("submit_post", data);
+    let date = new Date();
+    let now = date.toISOString();
+    console.log(now);
     $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
