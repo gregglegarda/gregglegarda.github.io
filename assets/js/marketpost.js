@@ -1,7 +1,6 @@
 console.log("marketpost.js");
 
-//submit post to initialize API call and to pull from database
-submit_post()
+
 
 function submit_post() {
     console.log("submit post");
@@ -54,5 +53,5 @@ function clear_post() {
     document.getElementById("demo-message").value = "";
 }
 
-
-load_db();
+//submit post to initialize API call and to pull from database
+submit_post()
