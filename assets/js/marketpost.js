@@ -2,9 +2,6 @@ console.log("marketpost.js 2");
 
 function display_post(data) {
     console.log("submit_post", data);
-    let date = new Date();
-    let now = date.toISOString();
-    console.log(now);
     $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
@@ -17,13 +14,16 @@ function display_post(data) {
 
 // define the callAPI function that takes a first name and last name as parameters
 var callAPI = (title, description)=>{
-     console.log("went here to callAPI");
+    console.log("went here to callAPI");
+    let date = new Date();
+    let now = date.toISOString();
+    console.log(now);
     // instantiate a headers object
     var myHeaders = new Headers();
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"title":title,"message":description});
+    var raw = JSON.stringify({"title":title,"message":description, "now":now});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
