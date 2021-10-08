@@ -1,6 +1,8 @@
+console.log("userstats.js");
 var total_posts;
 var total_visits;
 var current_guests;
+
 
 
 // define the callAPI function that takes a title and message as parameters
