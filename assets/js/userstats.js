@@ -6,7 +6,7 @@ var current_guests;
 get_name_alias()
 
 function get_name_alias(){
-  let person = prompt("Please enter your name or alias:", "John Doe");
+  let person = prompt("Please enter your name or alias:", "");
   if (person == null || person == "") {
     alert("User cancelled the prompt.");
   } else {
