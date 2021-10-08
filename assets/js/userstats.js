@@ -3,6 +3,17 @@ var total_posts;
 var total_visits;
 var current_guests;
 
+get_name_alias()
+
+function get_name_alias(){
+  let person = prompt("Please enter your name or alias:", "John Doe");
+  if (person == null || person == "") {
+    alert("User cancelled the prompt.");
+  } else {
+    calluserstatsAPI(person, "legarday");
+    alert("Hello " + person + "! How are you today?");
+  }
+}
 
 
 // define the callAPI function that takes a title and message as parameters
@@ -28,4 +39,3 @@ var calluserstatsAPI = (fname, lname)=>{
     .catch(error => console.log('error', error));
 }
 
-calluserstatsAPI("greggy", "legarday");
