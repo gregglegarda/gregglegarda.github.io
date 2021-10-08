@@ -19,9 +19,9 @@ function display_post(data) {
 }
 
 
-// define the callAPI function that takes a first name and last name as parameters
+// define the callAPI function that takes a title and message as parameters
 var callAPI = (title, message)=>{
-    let id = "gregglegardaID"
+    let id = "posts"
     if (title == "" || message == ""){
         id = "none";
     }
