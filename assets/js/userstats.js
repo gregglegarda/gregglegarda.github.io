@@ -1,24 +1,13 @@
-console.log("userstats.js");
+console.log("userstats.js script");
 var total_posts;
 var total_visits;
 var current_guests;
 
-get_name_alias()
-
-function get_name_alias(){
-  let person = prompt("Please enter your name or alias:", "");
-  if (person == null || person == "") {
-    alert("User cancelled the prompt.");
-  } else {
-    calluserstatsAPI(person, "legarday");
-    alert("Hello " + person + "! How are you today?");
-  }
-}
 
 
 // define the callAPI function that takes a title and message as parameters
 var calluserstatsAPI = (fname, lname)=>{
-
+    console.log("calluserstatsAPI");
     // instantiate a headers object
     var myHeaders = new Headers();
     // add content type header to object
@@ -38,4 +27,21 @@ var calluserstatsAPI = (fname, lname)=>{
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
 }
+
+
+function get_name_alias(){
+    console.log("get_name_alias");
+  let person = prompt("Please enter your name or alias:", "");
+  if (person == null || person == "") {
+    console.log("user cancelled");
+    alert("User cancelled the prompt.");
+  } else {
+    console.log("API called");
+    calluserstatsAPI(person, "legarday");
+    alert("Hello " + person + "! How are you today?");
+  }
+}
+
+get_name_alias()
+
 
