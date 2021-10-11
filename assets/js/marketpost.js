@@ -9,6 +9,7 @@ function submit_post() {
 
 function display_post(data) {
     console.log("display_post", data);
+    console.log("current_user", current_user);
     $( "#market_post_history" ).empty();
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
