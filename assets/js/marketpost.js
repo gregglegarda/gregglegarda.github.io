@@ -20,6 +20,7 @@ function display_post(data) {
 }
 
 
+
 // define the callAPI function that takes a title and message as parameters
 var callAPI = (title, message)=>{
     let id = "posts"
