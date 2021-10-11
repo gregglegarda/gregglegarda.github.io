@@ -13,7 +13,7 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><br /><br /></div>")
+        $( "#market_post_history" ).prepend( "<div><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><p>" +current_user+ "</p><br /><br /></div>")
     }
     clear_post();
 }

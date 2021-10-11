@@ -1,7 +1,8 @@
 console.log("userstats.js script");
 var total_posts;
 var total_visits;
-var current_guests;
+var current_online;
+var current_user;
 
 
 
@@ -32,13 +33,14 @@ var calluserstatsAPI = (name)=>{
 
 
 function get_name_alias(){
-    console.log("get_name_alias");
+  console.log("get_name_alias");
   let person = prompt("Please enter your name or alias:", "");
   if (person == null || person == "") {
     console.log("user cancelled");
   } else {
     console.log("API called");
     calluserstatsAPI(person);
+    current_user = person;
   }
 }
 
