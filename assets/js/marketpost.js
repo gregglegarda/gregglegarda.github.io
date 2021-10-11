@@ -55,6 +55,4 @@ function clear_post() {
 }
 
 //submit post to initialize API call and to pull from database
-submit_post()
-
-
+submit_post();
