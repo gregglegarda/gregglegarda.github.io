@@ -34,7 +34,7 @@ var callAPI = (title, message)=>{
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({"id":id, "title":title,"message":message, "date":date, "user":date});
+    var raw = JSON.stringify({"id":id, "title":title,"message":message, "date":date, "user":current_user});
     // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
