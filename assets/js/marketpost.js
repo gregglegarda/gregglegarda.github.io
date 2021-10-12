@@ -14,7 +14,7 @@ function display_post(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i]);
         var object = data[i];
-        $( "#market_post_history" ).prepend( "<div style='background-color:grey;'><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><p>by: " + object['user'] + "<br />on: "+ object['date'] +"</p><br /><br /></div>")
+        $( "#market_post_history" ).prepend( "<div style='background-color:grey;'><br /><h4 class='major'>"+ object['title'] + "</h4><p>" + object['message']+ "</p><p>by: " + object['user'] + "<br />on: "+ object['date'] +"</p></div><br /><br />")
     }
     clear_post();
 }
