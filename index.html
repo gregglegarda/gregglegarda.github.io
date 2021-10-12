@@ -699,27 +699,9 @@
 								<!------------------------------------ Input Market Posts ------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><input type="submit" value="Create Post" class="primary"  onclick="get_name_alias()"/></li>
+										<li><input href="#create_post" type="submit" value="Create Post" class="primary"  onclick="get_name_alias()"/></li>
 									</ul>
 								</section>
-
-								<section>
-									<h2 class="major">Market Posts</h2>
-									<div>
-										<div class="field">
-											<textarea name="demo-message" id="demo-message-title" placeholder="Enter title" rows="1"></textarea>
-											<br />
-											<textarea name="demo-message" id="demo-message" placeholder="Enter description" rows="6"></textarea>
-										</div>
-									</div>
-									<br />
-									<ul class="actions">
-										<li><input type="submit" value="Post" class="primary"  onclick="submit_post()"/></li>
-										<li><input type="reset" value="Clear" onclick="clear_post()"/></li>
-									</ul>
-								</section>
-
-
 
 								<!------------------------------------ Market Post History ------------------------------------------------>
 								<section>
@@ -1016,6 +998,25 @@
 							</article>
 
 
+						<!-- Create Post -->
+							<article id="create_post">
+								<section>
+									<h2 class="major">Market Posts</h2>
+									<div>
+										<div class="field">
+											<textarea name="demo-message" id="demo-message-title" placeholder="Enter title" rows="1"></textarea>
+											<br />
+											<textarea name="demo-message" id="demo-message" placeholder="Enter description" rows="6"></textarea>
+										</div>
+									</div>
+									<br />
+									<ul class="actions">
+										<li><input href = "#business" type="submit" value="Post" class="primary"  onclick="submit_post()"/></li>
+										<li><input type="reset" value="Clear" onclick="clear_post()"/></li>
+									</ul>
+								</section>
+							</article>
+
 						<!-- Organizations -->
 							<article id="organizations">
 								<h2 class="major">Organizations</h2>
@@ -1027,8 +1028,7 @@
 										<li><a href="#skills" class="button small">Previous Page</a></li>
 										<li><a href="#business" class="button small">Next Page</a></li>
 								</ul>
-								
-								
+
 							</article>
 						
 						<!-- Elements -->
