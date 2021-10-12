@@ -34,10 +34,11 @@ var calluserstatsAPI = (name)=>{
 
 function get_name_alias(){
   console.log("get_name_alias");
-  let person = prompt("Please enter your name or alias:", "Press cancel to remain anonymous");
-  if (person == null || person == "") {
+  let default_prompt = "Press cancel or leave empty to remain anonymous"
+  let person = prompt("Please enter your name or alias:", default_prompt);
+  if (person == null || person == "" || person == default_prompt) {
     console.log("user cancelled");
-    person = "anonymous";
+    person = "Anonymous User";
     calluserstatsAPI(person);
     current_user = person;
   } else {
