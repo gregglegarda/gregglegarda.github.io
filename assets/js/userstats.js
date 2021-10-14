@@ -34,8 +34,8 @@ var calluserstatsAPI = (name)=>{
 
 function get_name_alias(){
    console.log("get_name_alias function");
-   if (window.location.href.endsWith("#interact")){
-        console.log("page #interact");
+   if (window.location.href.endsWith("#posts")){
+        console.log("page #posts");
         let person = prompt("Please enter your name or alias:", "");
         if (person == null || person == "") {
             console.log("user cancelled");
@@ -49,7 +49,7 @@ function get_name_alias(){
         }
    }
    else{
-        console.log("page not #interact");
+        console.log("page not #posts");
    }
 
 }
