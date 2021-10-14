@@ -33,8 +33,8 @@ var calluserstatsAPI = (name)=>{
 
 
 function get_name_alias(){
-   console.log("get_name_alias");
-   if (document.location.endswith("interact")){
+   console.log("get_name_alias function");
+   if (document.location.endswith("#interact")){
         console.log("page #interact");
         let person = prompt("Please enter your name or alias:", "");
         if (person == null || person == "") {
