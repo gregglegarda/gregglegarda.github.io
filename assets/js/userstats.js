@@ -1,4 +1,4 @@
-console.log("userstats.js script");
+console.log("userstats.js");
 var total_posts;
 var total_visits;
 var current_online;
