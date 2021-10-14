@@ -1,4 +1,4 @@
-console.log("userstats.js script");
+console.log("userstats.js script1");
 var total_posts;
 var total_visits;
 var current_online;
@@ -34,7 +34,7 @@ var calluserstatsAPI = (name)=>{
 
 function get_name_alias(){
    console.log("get_name_alias function");
-   if (document.location.endsWith("#interact")){
+   if (window.location.endsWith("#interact")){
         console.log("page #interact");
         let person = prompt("Please enter your name or alias:", "");
         if (person == null || person == "") {
