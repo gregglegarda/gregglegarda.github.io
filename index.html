@@ -729,7 +729,6 @@
 										<li><a href="#" class="button small">Home Page</a></li>
 										<li><a href="#education" class="button small">Next Page</a></li>
 								</ul>
-								
 							</article>
 
 
@@ -738,17 +737,72 @@
 								<!------------------------------------ Input Market Posts ------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#create_post" class="button"  onclick="get_name_alias()">Posts</a></li>
-										<li><a href="#buy_and_sell" class="button"  onclick="get_name_alias()">Buy and Sell</a></li>
-										<li><a href="#video_cams" class="button"  onclick="get_name_alias()">Video Cams</a></li>
-										<li><a href="#live_chat" class="button"  onclick="get_name_alias()">Live Chat</a></li>
+										<li><a href="#interact" class="primary button"  onclick="get_name_alias()">Posts</a></li>
+										<li><a href="#buy_and_sell" class="button" >Buy and Sell</a></li>
+										<li><a href="#video_cams" class="button" >Video Cams</a></li>
+										<li><a href="#live_chat" class="button" >Live Chat</a></li>
 									</ul>
-									<h2 class="major">Post History</h2>
+								</section>
+
+								<section>
+									<h2 class="major">Create Post</h2>
+									<div>
+										<div class="field">
+											<textarea name="demo-message" id="demo-message-title" placeholder="Enter title" rows="1"></textarea>
+											<br />
+											<textarea name="demo-message" id="demo-message" placeholder="Enter description" rows="6"></textarea>
+										</div>
+									</div>
+									<br />
+									<ul class="actions">
+										<li><a href = "#interact" class="button primary"  onclick="submit_post()">Post</a></li>
+										<li><input type="reset" value="Clear" onclick="clear_post()"/></li>
+									</ul>
 								</section>
 
 								<!------------------------------------ Market Post History ------------------------------------------------>
 								<section>
-									<div id = 'market_post_history'>
+									<h2 class="major">Post History</h2>
+									<div id ='market_post_history'>
+										No Posts Available
+									</div>
+								</section>
+
+
+								<p>
+									<h5>Related Links:</h5>
+
+									<h6><a href="https://www.ta-petro.com/amenities/restaurants/country-pride">Travel Centers of America Country Pride Restaurant</a> /
+									<a href="https://www.navy.com/">United States Navy</a> /
+									<a href="https://international.heart.org/en/our-courses/basic-life-support">Basic Life Support, CPR - American Heart Association</a> /
+									<a href="https://www.ascp.org/content">American Society for Clinical Pathology (ASCP)</a> /
+									<a href="https://www.lovell.fhcc.va.gov/">Captain James A. Lovell Federal Health Care Center (FHCC)</a> /
+									<a href="https://pcsgwu.wixsite.com/pcsgwu">Philippine Cultural Society</a> /
+									<a href="https://hackital.io">GW Hacks: Hackital</a> /
+									<a href="https://www.gwu.edu">The George Washington University</a> /
+									<a href="https://html5up.net">Website Design: HTML5 UP</a> /
+									<a href="#elements">Elements</a></h6>
+								</p>
+
+								<ul class="actions">
+										<li><a href="#education" class="button small">Previous Page</a></li>
+										<li><a href="#" class="button small">Home Page</a></li>
+								</ul>
+							</article>
+
+
+							<!-- Buy and Sell -->
+							<article id="buy_and_sell">
+								<section>
+									<ul class="actions">
+										<li><a href="#interact" class="button"  onclick="get_name_alias()">Posts</a></li>
+										<li><a href="#buy_and_sell" class="primary button" >Buy and Sell</a></li>
+										<li><a href="#video_cams" class="button" >Video Cams</a></li>
+										<li><a href="#live_chat" class="button" >Live Chat</a></li>
+									</ul>
+								</section>
+								<section>
+									<div id ='buy_and_sell_history'>
 										<!------------------------------------ Slide 1 ------------------------------------------------>
 										<div>
 											<div class="slideshow-container">
@@ -1013,52 +1067,61 @@
 										</script>
 
 
-									</div><!---market chat history end--->
+									</div><!---buy and sell end--->
 
 								</section>
-
-
-
-								<p>
-									<h5>Related Links:</h5>
-
-									<h6><a href="https://www.ta-petro.com/amenities/restaurants/country-pride">Travel Centers of America Country Pride Restaurant</a> /
-									<a href="https://www.navy.com/">United States Navy</a> /
-									<a href="https://international.heart.org/en/our-courses/basic-life-support">Basic Life Support, CPR - American Heart Association</a> /
-									<a href="https://www.ascp.org/content">American Society for Clinical Pathology (ASCP)</a> /
-									<a href="https://www.lovell.fhcc.va.gov/">Captain James A. Lovell Federal Health Care Center (FHCC)</a> /
-									<a href="https://pcsgwu.wixsite.com/pcsgwu">Philippine Cultural Society</a> /
-									<a href="https://hackital.io">GW Hacks: Hackital</a> /
-									<a href="https://www.gwu.edu">The George Washington University</a> /
-									<a href="https://html5up.net">Website Design: HTML5 UP</a> /
-									<a href="#elements">Elements</a></h6>
-								</p>
-
 								<ul class="actions">
 										<li><a href="#education" class="button small">Previous Page</a></li>
 										<li><a href="#" class="button small">Home Page</a></li>
-                                                                </ul>
+								</ul>
 							</article>
 
 
-						<!-- Create Post -->
-							<article id="create_post">
+
+
+
+						<!-- Video Cams -->
+							<article id="video_cams">
 								<section>
-									<h2 class="major">Create Post</h2>
-									<div>
-										<div class="field">
-											<textarea name="demo-message" id="demo-message-title" placeholder="Enter title" rows="1"></textarea>
-											<br />
-											<textarea name="demo-message" id="demo-message" placeholder="Enter description" rows="6"></textarea>
-										</div>
-									</div>
-									<br />
 									<ul class="actions">
-										<li><a href = "#interact" class="button primary"  onclick="submit_post()">Post</a></li>
-										<li><input type="reset" value="Clear" onclick="clear_post()"/></li>
+										<li><a href="#interact" class="button"  onclick="get_name_alias()">Posts</a></li>
+										<li><a href="#buy_and_sell" class="button" >Buy and Sell</a></li>
+										<li><a href="#video_cams" class="primary button" >Video Cams</a></li>
+										<li><a href="#live_chat" class="button" >Live Chat</a></li>
 									</ul>
 								</section>
+								<section>
+									<h2 class="major">Video Cams</h2>
+
+								</section>
+								<ul class="actions">
+										<li><a href="#education" class="button small">Previous Page</a></li>
+										<li><a href="#" class="button small">Home Page</a></li>
+								</ul>
 							</article>
+
+
+						<!-- Live Chat -->
+							<article id="live_chat">
+								<section>
+									<ul class="actions">
+										<li><a href="#interact" class="button"  onclick="get_name_alias()">Posts</a></li>
+										<li><a href="#buy_and_sell" class="button" >Buy and Sell</a></li>
+										<li><a href="#video_cams" class="button" >Video Cams</a></li>
+										<li><a href="#live_chat" class="primary button" >Live Chat</a></li>
+									</ul>
+								</section>
+								<section>
+									<h2 class="major">Live Chat</h2>
+
+								</section>
+								<ul class="actions">
+										<li><a href="#education" class="button small">Previous Page</a></li>
+										<li><a href="#" class="button small">Home Page</a></li>
+								</ul>
+							</article>
+
+
 
 						<!-- Organizations -->
 							<article id="organizations">
