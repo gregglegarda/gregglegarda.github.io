@@ -33,24 +33,19 @@ var calluserstatsAPI = (name)=>{
 
 
 function get_name_alias(){
-   console.log("get_name_alias function");
-   if (document.location.endsWith("#interact")){
-        console.log("page #interact");
-        let person = prompt("Please enter your name or alias:", "");
-        if (person == null || person == "") {
-            console.log("user cancelled");
-            person = "Anonymous User";
-            calluserstatsAPI(person);
-            current_user = person;
-        } else {
-            console.log("API called");
-            calluserstatsAPI(person);
-            current_user = person;
-        }
-   }
-   else{
-        console.log("page not #interact");
-   }
+    console.log("get_name_alias function");
+    let person = prompt("Please enter your name or alias:", "");
+    if (person == null || person == "") {
+        console.log("user cancelled");
+        person = "Anonymous User";
+        calluserstatsAPI(person);
+        current_user = person;
+    } else {
+        console.log("API called");
+        calluserstatsAPI(person);
+        current_user = person;
+    }
+
 
 }
 
