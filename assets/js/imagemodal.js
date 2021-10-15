@@ -16,5 +16,6 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
+    console.log("x is clicked");
   modal.style.display = "none";
 }
