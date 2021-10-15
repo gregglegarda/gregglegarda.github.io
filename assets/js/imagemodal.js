@@ -15,7 +15,12 @@ img.onclick = function(){
 var span = document.getElementsByClassName("close");
 
 // When the user clicks on <span> (x), close the modal
-span.onmouseover = function() {
+span.onclick = function() {
     console.log("x is clicked");
   modal.style.display = "none";
+}
+
+// When the user clicks on <modal> (x), close the modal
+modal.mouseover = function() {
+    console.log("modsal hover");
 }
