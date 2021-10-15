@@ -43,7 +43,7 @@ var callAPI = (title, message)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch(api_key_gregglegardadev, requestOptions)
+    fetch(config.api_key_gregglegardadev, requestOptions)
     .then(response => response.text())
     .then(result => display_post(JSON.parse(result).body))
     .catch(error => console.log('error', error));
