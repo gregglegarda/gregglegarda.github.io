@@ -43,7 +43,7 @@ var callAPI = (title, message)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("https://89xodcg5pj.execute-api.us-east-1.amazonaws.com/gregglegardadev", requestOptions)
+    fetch(api_key_gregglegardadev, requestOptions)
     .then(response => response.text())
     .then(result => display_post(JSON.parse(result).body))
     .catch(error => console.log('error', error));

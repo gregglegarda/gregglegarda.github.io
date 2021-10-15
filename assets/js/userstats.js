@@ -25,7 +25,7 @@ var calluserstatsAPI = (name)=>{
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("https://l72kez4ojb.execute-api.us-east-1.amazonaws.com/gregglegardauserstatsdev", requestOptions)
+    fetch(api_key_gregglegardauserstatsdev, requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
