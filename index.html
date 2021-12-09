@@ -972,7 +972,7 @@
 												<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
 											</div>
 											<br />
-											<h4 class="major">Rene Eduardo Pinilla</h4>
+											<h4 class="major" id = "rene_eduardo_pinilla">Rene Eduardo Pinilla</h4>
 											<p>
 												<ul class="icons">
 													<li><a href="https://www.linkedin.com/in/reneepinilla/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -984,32 +984,33 @@
 										</div>
 										
 										<!------------------------------------ Java Script ------------------------------------------------>
-										<script>
-											var slideIndex = [1,1,1,1,1,1];
-											var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
-											showSlides(1, 0);
-											showSlides(1, 1);
-											showSlides(1, 2);
-											showSlides(1, 3);
-											showSlides(1, 4);
-											showSlides(1, 5);
+										<div>
+											<script>
+												var slideIndex = [1,1,1,1,1,1];
+												var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
+												showSlides(1, 0);
+												showSlides(1, 1);
+												showSlides(1, 2);
+												showSlides(1, 3);
+												showSlides(1, 4);
+												showSlides(1, 5);
 
-											function plusSlides(n, no) {
-											  showSlides(slideIndex[no] += n, no);
-											}
+												function plusSlides(n, no) {
+												  showSlides(slideIndex[no] += n, no);
+												}
 
-											function showSlides(n, no) {
-											  var i;
-											  var x = document.getElementsByClassName(slideId[no]);
-											  if (n > x.length) {slideIndex[no] = 1}
-											  if (n < 1) {slideIndex[no] = x.length}
-											  for (i = 0; i < x.length; i++) {
-											     x[i].style.display = "none";
-											  }
-											  x[slideIndex[no]-1].style.display = "block";
-											}
-										</script>
-
+												function showSlides(n, no) {
+												  var i;
+												  var x = document.getElementsByClassName(slideId[no]);
+												  if (n > x.length) {slideIndex[no] = 1}
+												  if (n < 1) {slideIndex[no] = x.length}
+												  for (i = 0; i < x.length; i++) {
+													 x[i].style.display = "none";
+												  }
+												  x[slideIndex[no]-1].style.display = "block";
+												}
+											</script>
+										</div>
 
 									</div><!---services end--->
 
@@ -1139,7 +1140,7 @@
 												<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 											</div>
 											<br />
-											<h4 class="major">Kenmanor Condominiums</h4>
+											<h4 class="major" id = "kenmanor_202_room">Kenmanor Condominiums</h4>
 											<p>
 												3bd/1.5ba unit in 3355 University Blvd. West, Kensington, MD 20895.
 												1,222 square feet of space.
@@ -1333,7 +1334,7 @@
 											<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 										</div>
 										<br />
-										<h4 class="major">Kenmanor Storage</h4>
+										<h4 class="major" id = "kenmanor_202_storage">Kenmanor Storage</h4>
 										<div class="table-wrapper">
 											<table>
 												<thead>
