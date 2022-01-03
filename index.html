@@ -1078,6 +1078,7 @@
 									<ul class="actions">
 										<li><a href="#rooms" class="primary button small" >Rooms</a></li>
 										<li><a href="#storage" class="button small" >Storage</a></li>
+										<li><a href="#parking" class="button small" >Parking</a></li>
 									</ul>
 								</section>
 								<section>
@@ -1310,6 +1311,7 @@
 									<ul class="actions">
 										<li><a href="#rooms" class="primary button small" >Rooms</a></li>
 										<li><a href="#storage" class="button small" >Storage</a></li>
+										<li><a href="#parking" class="button small" >Parking</a></li>
 									</ul>
 								</section>
 							</article>
@@ -1322,6 +1324,7 @@
 									<ul class="actions">
 										<li><a href="#rooms" class="button small" >Rooms</a></li>
 										<li><a href="#storage" class="primary button small" >Storage</a></li>
+										<li><a href="#parking" class="button small" >Parking</a></li>
 									</ul>
 								</section>
 								<section>
@@ -1409,49 +1412,125 @@
 									<ul class="actions">
 										<li><a href="#rooms" class="button small" >Rooms</a></li>
 										<li><a href="#storage" class="primary button small" >Storage</a></li>
+										<li><a href="#parking" class="button small" >Parking</a></li>
 									</ul>
 								</section>
 							</article>
 
 
 
-							<!-- Partners -->
-							<article id="partners">
-								<!------------------------------------ Buttons Header------------------------------------------------>
+						<!-- Parking -->
+							<article id="parking">
+								<!------------------------------------ Buttons Header ------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="primary button small" >Partners</a></li>
-										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
-										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
+										<li><a href="#rooms" class="button small" >Rooms</a></li>
+										<li><a href="#storage" class="button small" >Storage</a></li>
+										<li><a href="#parking" class="primary button small" >Parking</a></li>
 									</ul>
 								</section>
 								<section>
-									<h2 class="major">Partners</h2>
-									<br />
-								</section>
+									<h2 class="major">Storage</h2>
 
+									<!------------------------------------ Slide 3 ------------------------------------------------>
+									<div>
+										<div class="slideshow-container">
+											<div class="mySlides3">
+											<img src="images/market place/storage/storage1.jpg" style="width:100%">
+											</div>
+											<div class="mySlides3">
+											<img src="images/market place/storage/storage2.jpg" style="width:100%">
+											</div>
+											<div class="mySlides3">
+											<img src="images/market place/storage/storage3.jpg" style="width:100%">
+											</div>
+
+											<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+											<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+										</div>
+										<br />
+										<h4 class="major" id = "kenmanor_202_parking">Kenmanor Parking</h4>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+													<th>Description</th>
+													<th>Rental Rate</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+													<td>77L x 33W x 96H inches. Private Locked Storage. 3355 University Blvd W, Kensington, MD</td>
+													<td>40.00</td>
+													</tr>
+													<tr>
+													<td>47L x 23W x 82H inches. Closet Storage Space. 3355 University Blvd W, Kensington, MD</td>
+													<td>25.00</td>
+													</tr>
+													<tr>
+													<td>47L x 23W x 82H inches. Shelved Space Storage. 3355 University Blvd W, Kensington, MD</td>
+													<td>25.00</td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+										<br />
+										<br />
+									</div>
+
+									<!------------------------------------ Java Script ------------------------------------------------>
+									<div>
+										<script>
+											var slideIndex = [1,1,1,1,1,1];
+											var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
+											showSlides(1, 0);
+											showSlides(1, 1);
+											showSlides(1, 2);
+											showSlides(1, 3);
+											showSlides(1, 4);
+											showSlides(1, 5);
+
+											function plusSlides(n, no) {
+											  showSlides(slideIndex[no] += n, no);
+											}
+
+											function showSlides(n, no) {
+											  var i;
+											  var x = document.getElementsByClassName(slideId[no]);
+											  if (n > x.length) {slideIndex[no] = 1}
+											  if (n < 1) {slideIndex[no] = x.length}
+											  for (i = 0; i < x.length; i++) {
+											     x[i].style.display = "none";
+											  }
+											  x[slideIndex[no]-1].style.display = "block";
+											}
+										</script>
+									</div>
+
+								</section>
 								<!------------------------------------ Buttons Footer------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="primary button small" >Partners</a></li>
-										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
-										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
+										<li><a href="#rooms" class="button small" >Rooms</a></li>
+										<li><a href="#storage" class="button small" >Storage</a></li>
+										<li><a href="#parking" class="primary button small" >Parking</a></li>
 									</ul>
 								</section>
 							</article>
 
 
-							<!-- Spanish -->
-							<article id="spanish">
+
+
+
+
+							<!-- Flodict USA -->
+							<article id="flodictusa">
 								<!------------------------------------ Buttons Header------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
 										<li><a href="#flodictusa" class="primary button small" >Flodict USA</a></li>
 										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
 									</ul>
 								</section>
 								<section>
@@ -1462,10 +1541,8 @@
 								<!------------------------------------ Buttons Footer------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
 										<li><a href="#flodictusa" class="primary button small" >Flodict USA</a></li>
 										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
 									</ul>
 								</section>
 							</article>
@@ -1474,63 +1551,30 @@
 
 
 
-						<!-- Tagalog -->
-							<article id="tagalog">
+						<!-- Flodict Indonesia -->
+							<article id="flodictindonesia">
 								<!------------------------------------ Buttons Header------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
 										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
 										<li><a href="#flodictindonesia" class="primary button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
 									</ul>
 								</section>
 								<section>
 									<h2 class="major">Partners</h2>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/flodict.id/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<br />
 								</section>
 
 								<!------------------------------------ Buttons Footer------------------------------------------------>
 								<section>
 									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
 										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
 										<li><a href="#flodictindonesia" class="primary button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="button small" >English</a></li>
 									</ul>
 								</section>
 							</article>
-
-
-
-
-						<!-- English -->
-							<article id="english">
-								<!------------------------------------ Buttons Header------------------------------------------------>
-								<section>
-									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
-										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
-										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="primary button small" >English</a></li>
-									</ul>
-								</section>
-								<section>
-									<h2 class="major">Partners</h2>
-									<br />
-								</section>
-
-								<!------------------------------------ Buttons Footer------------------------------------------------>
-								<section>
-									<ul class="actions">
-										<li><a href="#partners" class="button small" >Partners</a></li>
-										<li><a href="#flodictusa" class="button small" >Flodict USA</a></li>
-										<li><a href="#flodictindonesia" class="button small" >Flodict Indonesia</a></li>
-										<li><a href="#english" class="primary button small" >English</a></li>
-									</ul>
-								</section>
-							</article>
-
 
 
 
