@@ -1,7 +1,7 @@
 console.log("marketpost.js");
 
 
-
+/*
 function submit_post() {
     console.log("submit post");
     callAPI(document.getElementById('demo-message-title').value,document.getElementById('demo-message').value);
@@ -57,3 +57,4 @@ function clear_post() {
 
 //submit post to initialize API call and to pull from database
 submit_post();
+*/
