@@ -768,12 +768,33 @@ button,
   .button.disabled,
   .button:disabled {
     opacity: 0.5; }
+
+
+  @media screen and (max-width: 1680px) {
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+      min-width: 120px;
+      padding: 0; } }
+
+  @media screen and (max-width: 736px) {
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+      min-width: 250px;
+      padding: 0; } }
+
   @media screen and (max-width: 480px) {
     input[type="submit"],
     input[type="reset"],
     input[type="button"],
     button,
     .button {
+      min-width: 250px;
       padding: 0; } }
 
 /* Header */
@@ -813,6 +834,7 @@ button,
     margin: 0 0 0 1em; }
   #signup-form > :first-child {
     margin: 0 0 0 0; }
+
   @media screen and (max-width: 480px) {
     #signup-form {
       -moz-flex-direction: column;
