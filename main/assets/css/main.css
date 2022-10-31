@@ -1800,6 +1800,7 @@ input, select, textarea {
 		text-transform: uppercase;
 		text-decoration: none;
 		background: #b1ddab;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(#e6e6e6));/*added*/
 		color: #fff;
 		border: 0;
 		line-height: 1em;
@@ -1814,6 +1815,7 @@ input, select, textarea {
 		font-size: 1.25em;
 		padding: 0.85em 1.85em;
 		text-align: center;
+		margin-bottom:15px /*added*/
 	}
 
 		input[type="button"]:hover,
@@ -1822,6 +1824,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background: #c1edbb;
+			background: -webkit-gradient(linear, left top, left bottom, from(#a95), to(#fea));/*added*/
 		}
 
 		input[type="button"]:active,
@@ -1929,6 +1932,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		cursor: default;
+
 	}
 
 		ul.contact li {
@@ -1938,7 +1942,7 @@ input, select, textarea {
 			transition: top .15s ease-in-out;
 			position: relative;
 			display: inline-block;
-			margin: 0 0.25em 0 0.25em;
+			margin: 0.25em 0.25em 0.25em 0.25em;/*added*/
 			top: 0;
 			padding-left: 0;
 		}
@@ -2427,6 +2431,7 @@ input, select, textarea {
 
 			#nav li.current a {
 				background: #b1ddab;
+				background: -webkit-gradient(linear, left top, left bottom, from(#a95), to(#fea));/*added*/
 				color: #fff;
 			}
 
@@ -2554,7 +2559,7 @@ input, select, textarea {
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #b1ddab;
+		border-top: solid 5px #d7be69;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
@@ -2838,6 +2843,7 @@ input, select, textarea {
 						left: 0;
 						top: 0;
 						background: #b1ddab;
+		                background: -webkit-gradient(linear, left top, left bottom, from(#a95), to(#fea));/*added*/
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
