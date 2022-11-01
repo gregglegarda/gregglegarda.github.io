@@ -39,6 +39,7 @@
 						    'images/bg08.jpg': 'center',
 							'images/bg07.jpg': 'center',
 							'images/bg06.jpg': 'center',
+							//'images/bg06.gif': 'center',
 							'images/bg05.jpg': 'center',
 							'images/bg04.jpg': 'center',
 							'images/bg03.jpg': 'center',
@@ -100,7 +101,7 @@
 					// Hide last image after a short delay.
 						window.setTimeout(function() {
 							$bgs[lastPos].classList.remove('visible');
-						}, settings.delay / 10);
+						}, settings.delay / 1000);
 
 				}, settings.delay);
 
