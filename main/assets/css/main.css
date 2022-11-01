@@ -1800,7 +1800,7 @@ input, select, textarea {
 		text-transform: uppercase;
 		text-decoration: none;
 		background: #b1ddab;
-		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(#e6e6e6));/*added*/
+		background: -webkit-gradient(linear, left top, left bottom, from(#a95), to(#fea));/*added*/
 		color: #fff;
 		border: 0;
 		line-height: 1em;
@@ -1824,7 +1824,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background: #c1edbb;
-			background: -webkit-gradient(linear, left top, left bottom, from(#a95), to(#fea));/*added*/
+		    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(#e6e6e6));/*added*/
 		}
 
 		input[type="button"]:active,
